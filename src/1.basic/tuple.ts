@@ -9,7 +9,7 @@ namespace _tuple {
     [3.4, 5.6],
     [7]
   ];
-  type C = typeof c[0];// type C = [number, (number | undefined)?][]
+  type C = typeof c[0];// type C = [number, number)?]
 
   type StringTuple = [string, ...string[]]
   let d: StringTuple = ['a', 'b', 'c'];
