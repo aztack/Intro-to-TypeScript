@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "module": "CommonJS",
+    "target": "es2020",
+    "jsx": "preserve",
+    "strict": true,
+    "noImplicitAny": true,
+    "strictFunctionTypes": true,
+    "sourceMap": true,
+    "importHelpers": true,
+    "strictNullChecks": true,
+    "preserveConstEnums": false,
+    "noUnusedLocals": false
+  },
+  "exclude": ["node_modules", "**/node_modules/*"]
+}

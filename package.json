@@ -1,0 +1,16 @@
+{
+  "name": "Intro-to-TypeScript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@type-challenges/utils": "^0.1.1",
+    "typescript": "^4.2.3"
+  }
+}
