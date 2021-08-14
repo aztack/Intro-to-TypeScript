@@ -4,7 +4,7 @@ namespace _two_spaces {
     y: number;
   }
 
-  const p = {x: 0, y: 0};
+  const p: IPoint = {x: 0, y: 0};
 
   // Error: 'IPoint' only
   // refers to a type,
@@ -12,6 +12,15 @@ namespace _two_spaces {
   // a value here.
   if (p instanceof IPoint) {
     
+  }
+  class Point implements IPoint {
+    constructor(
+        public x: number,
+        public y: number
+    ) {}
+  }
+  if(p instanceof Point) {
+
   }
 }
 
