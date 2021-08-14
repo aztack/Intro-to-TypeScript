@@ -4,6 +4,7 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
+    "tsconfig": "tsc --init --locale zh-CN",
     "build": "tsc"
   },
   "keywords": [],
