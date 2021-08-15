@@ -32,12 +32,12 @@ namespace _mapped_type {
   };
 
   type OptionalUser = { [K in keyof User]?: User[K] }
-
   type NullableUser = { [K in keyof User]: User[K] | null }
-
   type ReadonlyUser = { readonly [K in keyof User]: User[K] }
-
-  type User2 = { -readonly [K in keyof ReadonlyUser]: User[K] } // User2 = User
-
-  type User3 = { [K in keyof OptionalUser]-?: User[K] } // User3 = User
+  
+  type User2 = { -readonly [K in keyof ReadonlyUser]: User[K] }
+  type R1 = Equal<User2, User>; // true
+  
+  type User3 = { [K in keyof OptionalUser]-?: User[K] }
+  type R2 = Equal<User3, User>; // true
 }
