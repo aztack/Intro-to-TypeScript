@@ -17,5 +17,5 @@ test();
 /*
 <a href="javascript:void(0)">link</a>
 <a href="javascript:undefined">link</a>
-<a onclick={() => void return()}>OK</a>
+<a onclick={() => void doSomething()}>OK</a>
 */
