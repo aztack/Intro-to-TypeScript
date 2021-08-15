@@ -4,13 +4,11 @@ namespace _enum {
     Japanese = 'JP',
     Korean = 1
   }
-  /* {
-    "0": "Chinese", "1": "Korean",
-    "Chinese": 0, "Japanese": "Japanese", "Korean": 1
-  }*/
   console.log(CJK);
   const c1 = CJK.Chinese;
+}
 
+namespace _enum {
   namespace Colors {
     export function toString(color: Colors) {
       return Colors[color];
