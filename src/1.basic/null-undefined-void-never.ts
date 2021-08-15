@@ -1,4 +1,4 @@
-function log(msg: string): void {
+function log(msg: string) {
   console.log(msg);
 }
 
@@ -17,4 +17,5 @@ test();
 /*
 <a href="javascript:void(0)">link</a>
 <a href="javascript:undefined">link</a>
+<a onclick={() => void return()}>OK</a>
 */
