@@ -1,7 +1,7 @@
 namespace _enum {
   enum CJK {
     Chinese,
-    Japanese = 'Japanese',
+    Japanese = 'JP',
     Korean = 1
   }
   /* {
