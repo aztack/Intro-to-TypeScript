@@ -1,11 +1,13 @@
 namespace _enum {
   const enum CJK {
     Chinese,
-    Japanese = 'Japanese',
+    Japanese = 'JP',
     Korean = 1
   }
-  console.log(CJK);
-  const c1 = CJK.Chinese;
+  console.log(CJK.Chinese);
+  console.log(CJK.Japanese)
+  console.log(CJK[0]) // Error
+  console.log(CJK); // Error
 
   const enum Colors { Red, Green, Blue }
 
