@@ -19,3 +19,15 @@ test();
 <a href="javascript:undefined">link</a>
 <a onclick={() => void doSomething()}>OK</a>
 */
+
+// any > void > undefined
+// see https://github.com/microsoft/TypeScript/pull/11263
+let a = undefined; // typeof a = any
+
+const b = undefined; // typeof b = undefined
+let c: void = undefined;
+let d: void = void 0;
+
+// not value can be assigned to variable of never type
+let e: never;
+let f: never = e;
